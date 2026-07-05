@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import { FaFacebook } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
 
@@ -84,7 +85,7 @@ function Banner() {
     <div className="hidden md:block">
       <div className="flex justify-between bg-main px-8 lg:px-40 py-3 font-light text-white text-base">
         <a
-          href="tel:03022471111"
+          href="tel:0302-2471111"
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Phone size={20} />
@@ -103,7 +104,7 @@ function Banner() {
           rel="noreferrer"
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
-          <Mail size={20} />
+          <FaFacebook size={18} />
           Hajj & Umrah Services
         </a>
         <a
@@ -112,7 +113,7 @@ function Banner() {
           rel="noreferrer"
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
-          <Mail size={20} />
+          <FaFacebook size={18} />
           Ziarat Services
         </a>
       </div>

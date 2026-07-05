@@ -70,7 +70,7 @@ export default function Header() {
                 {slide.badge}
               </div>
 
-              <h1 className="mb-5 font-bold text-3xl md:text-6xl leading-tight">
+              <h1 className="mb-5 font-bold text-3xl md:text-7xl leading-tight">
                 {slide.title}
               </h1>
 
