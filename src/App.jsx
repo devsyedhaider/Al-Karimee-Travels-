@@ -1,9 +1,11 @@
 function App() {
   return (
-    <div className="flex justify-center items-center bg-slate-900 min-h-screen">
-      <h1 className="font-bold text-cyan-400 text-8xl">
-        React + Tailwind CSS 🚀
+    <div className="flex justify-center items-center bg-white">
+      <h1 className="font-heading font-bold text-black text-4xl">
+        {" "}
+        This ths headinf{" "}
       </h1>
+      <p clasName="font-sans text-2xl"> asdfaserfwdrsaarasreara</p>
     </div>
   );
 }
