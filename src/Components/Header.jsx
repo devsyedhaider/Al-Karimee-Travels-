@@ -65,7 +65,7 @@ export default function Header() {
           <div className="absolute inset-0 bg-black/80" />
 
           <div className="absolute inset-0 flex justify-center md:justify-start items-center">
-            <div className="mx-auto px-6 md:px-12 pt-20 md:pt-32 lg:pt-40 max-w-7xl text-white">
+            <div className="ml-1 lg:ml-25 px-6 md:px-12 pt-20 md:pt-32 lg:pt-40 max-w-7xl text-white">
               <div className="inline-block bg-main mb-5 px-5 py-2 rounded-full text-sm tracking-wide">
                 {slide.badge}
               </div>
