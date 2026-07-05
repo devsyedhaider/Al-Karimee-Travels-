@@ -84,21 +84,21 @@ function Banner() {
     <div className="hidden md:block">
       <div className="flex justify-between bg-main px-8 lg:px-40 py-3 font-light text-white text-base">
         <a
-          href="tel:0321499572"
+          href="tel:03022471111"
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Phone size={20} />
-          0321-499572
+          0302-2471111
         </a>
         <a
-          href="mailto:devalihaider86@gmail.com"
+          href="mailto:alkarimee@hotmail.com"
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Mail size={20} />
-          info@Alkarimee.travel
+          alkarimee@hotmail.com
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/people/Al-Karimee-Travels-Tours-Pvt-Ltd/61550221046678/"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-4 hover:opacity-80 transition"
@@ -107,7 +107,7 @@ function Banner() {
           Hajj & Umrah Services
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/people/Al-Karimee-Travels-Tours-Pvt-Ltd/61550221046678/"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-4 hover:opacity-80 transition"
