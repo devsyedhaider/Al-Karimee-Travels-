@@ -95,7 +95,7 @@ function Banner() {
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Mail size={20} />
-          0321-499572
+          info@Alkarimee.travel
         </a>
         <a
           href="https://facebook.com"
@@ -104,7 +104,7 @@ function Banner() {
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Mail size={20} />
-          0321-499572
+          Hajj & Umrah Services
         </a>
         <a
           href="https://facebook.com"
@@ -113,7 +113,7 @@ function Banner() {
           className="flex items-center gap-4 hover:opacity-80 transition"
         >
           <Mail size={20} />
-          0321-499572
+          Ziarat Services
         </a>
       </div>
     </div>
