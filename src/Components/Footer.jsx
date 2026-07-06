@@ -1,11 +1,12 @@
 import {
   FaFacebookF,
-  FaInstagram,
   FaWhatsapp,
   FaPhoneAlt,
   FaArrowRight,
 } from "react-icons/fa";
 
+import { FooterLinks } from "../Data/data";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -60,24 +61,18 @@ const Footer = () => {
               guidance and years of experience.
             </p>
 
-            {/* Social */}
             <div className="flex gap-4 mt-8">
               <a
-                href="#"
+                href="https://www.facebook.com/people/Al-Karimee-Travels-Tours-Pvt-Ltd/61550221046678/"
+                target="_blank"
                 className="flex justify-center items-center hover:bg-golden border border-white/20 rounded-full w-11 h-11 hover:text-main transition duration-300"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="#"
-                className="flex justify-center items-center hover:bg-golden border border-white/20 rounded-full w-11 h-11 hover:text-main transition duration-300"
-              >
-                <FaInstagram />
-              </a>
-
-              <a
-                href="#"
+                href="https://wa.me/03022471111"
+                target="_blank"
                 className="flex justify-center items-center hover:bg-golden border border-white/20 rounded-full w-11 h-11 hover:text-main transition duration-300"
               >
                 <FaWhatsapp />
@@ -141,22 +136,11 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-4 text-white/75">
-              {[
-                "Home",
-                "About Us",
-                "Hajj Packages",
-                "Umrah Packages",
-                "Ziyarat",
-                "Gallery",
-                "Contact Us",
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="hover:pl-2 hover:text-golden transition"
-                  >
-                    {item}
-                  </a>
+              {FooterLinks.map((item) => (
+                <li key={item.name}>
+                  <Link to={item.path} className="hover:text-golden transition">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>

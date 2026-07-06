@@ -1,9 +1,6 @@
-import Navbar from "../Components/Navbar";
-import Header from "../Components/Header";
 import hajjImg from "../assets/home/hajj.avif";
 import UmrahImg from "../assets/home/umrah.avif";
 import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
 import Testimonails from "../Components/Testimonails";
 
 import { ArrowRight, Plane, Globe2, Landmark, MapPinned } from "lucide-react";
@@ -15,16 +12,11 @@ import ziyaratImg from "../assets/home/ziyaratImg.jpg";
 export default function Home() {
   return (
     <div className="bg-white">
-      <Navbar />
-      <Header />
-
       <div className="mt-5 md:mt-5">
         <TravelSection />
         <ServicesSection />
         <Testimonails />
       </div>
-
-      <Footer />
     </div>
   );
 }

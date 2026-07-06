@@ -2,21 +2,12 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { FaFacebook } from "react-icons/fa";
+import { navLinks } from "../Data/data";
 
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navLinks = [
-    { name: "Company Profile", path: "/CompanyProfile" },
-    { name: "Hajj", path: "/hajj" },
-    { name: "Umrah", path: "/umrah" },
-    { name: "Ziarat", path: "/ziarat" },
-    { name: "Services", path: "/services" },
-    { name: "Mora", path: "/mora" },
-    { name: "Contact", path: "/contact" },
-  ];
 
   return (
     <nav className="top-0 left-0 z-50 fixed bg-white w-full">
