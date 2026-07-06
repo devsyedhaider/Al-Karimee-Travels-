@@ -1,63 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const testimonials = [
-  {
-    name: "Ayesha Khan",
-    role: "Travel Blogger",
-    image: "https://i.pravatar.cc/150?img=32",
-    text: "This travel service made my Umrah journey peaceful and perfectly organized.",
-  },
-  {
-    name: "Muhammad Ali",
-    role: "Entrepreneur",
-    image: "https://i.pravatar.cc/150?img=12",
-    text: "Excellent service! Very professional and smooth experience.",
-  },
-  {
-    name: "Sara Ahmed",
-    role: "Content Creator",
-    image: "https://i.pravatar.cc/150?img=47",
-    text: "Highly recommended for Hajj and Umrah planning.",
-  },
-  {
-    name: "Hassan Raza",
-    role: "Businessman",
-    image: "https://i.pravatar.cc/150?img=22",
-    text: "Everything was handled perfectly and on time.",
-  },
-  {
-    name: "Fatima Noor",
-    role: "Teacher",
-    image: "https://i.pravatar.cc/150?img=25",
-    text: "Smooth experience from start to finish.",
-  },
-  {
-    name: "Usman Tariq",
-    role: "Engineer",
-    image: "https://i.pravatar.cc/150?img=15",
-    text: "Very clean UI and great service system.",
-  },
-  {
-    name: "Zainab Ali",
-    role: "Doctor",
-    image: "https://i.pravatar.cc/150?img=5",
-    text: "Highly trustworthy travel management.",
-  },
-  {
-    name: "Ahmed Bilal",
-    role: "Photographer",
-    image: "https://i.pravatar.cc/150?img=9",
-    text: "Amazing experience overall.",
-  },
-  {
-    name: "Maryam Sheikh",
-    role: "Designer",
-    image: "https://i.pravatar.cc/150?img=19",
-    text: "Excellent customer support and planning.",
-  },
-];
+import { testimonials } from "../Data/data";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);

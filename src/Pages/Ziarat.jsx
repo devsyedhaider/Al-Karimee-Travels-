@@ -1,3 +1,16 @@
+import PagesHeader from "../Components/PagesHeader";
+import ZairatBg from "../assets/HeaderAllPages/ziarat.jpg";
+
 export default function Ziarat() {
-  return <div></div>;
+  return (
+    <div>
+      <div className="mb-20">
+        <PagesHeader
+          bgImage={ZairatBg}
+          title="Al Karimee Travels Ziarat Packages "
+        />
+      </div>
+      <div className="container"></div>
+    </div>
+  );
 }

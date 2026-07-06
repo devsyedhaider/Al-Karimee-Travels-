@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import img1 from "../assets/header/slider1.avif";
 import img2 from "../assets/header/slider2.avif";
@@ -83,13 +84,25 @@ export default function Header() {
               </p>
 
               <div className="flex sm:flex-row flex-col gap-4">
-                <button className="bg-main hover:bg-main px-10 py-3 rounded-xl font-medium transition cursor-pointer">
+                <Link
+                  to="/contact"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="bg-main hover:bg-main px-10 py-3 rounded-xl font-medium transition cursor-pointer"
+                >
                   Book Now
-                </button>
+                </Link>
 
-                <button className="hover:bg-white/10 px-10 py-3 border border-white/40 rounded-xl font-medium transition cursor-pointer">
+                <Link
+                  to="/service"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="hover:bg-white/10 px-10 py-3 border border-white/40 rounded-xl font-medium transition cursor-pointer"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>

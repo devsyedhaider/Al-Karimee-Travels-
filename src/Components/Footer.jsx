@@ -1,19 +1,14 @@
-import {
-  FaFacebookF,
-  FaWhatsapp,
-  FaPhoneAlt,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 import { FooterLinks } from "../Data/data";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/footerlogo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-main mt-32 text-white">
       <div className="relative container">
-        <div className="bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] rounded-3xl -translate-y-1/2">
+        <div className="bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] rounded-3xl -translate-y-1/6 md:-translate-y-1/4">
           <div className="flex lg:flex-row flex-col justify-between items-center gap-8 p-8 lg:px-12 lg:py-10">
             <div>
               <span className="font-semibold text-golden uppercase tracking-[3px]">
@@ -30,16 +25,15 @@ const Footer = () => {
               </p>
             </div>
 
-            <form className="flex bg-white border border-gray-200 rounded-full w-full max-w-xl overflow-hidden">
+            <form className="flex sm:flex-row flex-col gap-2 sm:gap-0 sm:bg-white sm:border sm:border-gray-200 sm:rounded-full w-full max-w-xl overflow-hidden">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-6 py-4 outline-none text-charcol"
+                className="flex-1 bg-white sm:bg-transparent px-5 py-3 md:py-4 border border-gray-200 sm:border-0 rounded-lg sm:rounded-none outline-none text-charcol"
               />
 
-              <button className="flex items-center gap-2 bg-golden hover:brightness-95 px-8 font-semibold text-main transition">
+              <button className="bg-main hover:brightness-95 px-6 md:px-8 py-3 md:py-4 rounded-lg sm:rounded-none w-full sm:w-auto font-semibold text-white transition">
                 Subscribe
-                <FaArrowRight />
               </button>
             </form>
           </div>
@@ -52,7 +46,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Air Guide Travel"
-              className="h-16 object-contain"
+              className="h-26 object-contain"
             />
 
             <p className="mt-6 text-white/75 leading-8">
@@ -149,7 +143,7 @@ const Footer = () => {
 
         <div className="flex lg:flex-row flex-col justify-between items-center gap-6 py-6 text-white/60 text-sm">
           <p>
-            © {new Date().getFullYear()} Air Guide Travel Pakistan. All Rights
+            © {new Date().getFullYear()} Al Karimee Travel Pakistan. All Rights
             Reserved.
           </p>
 
