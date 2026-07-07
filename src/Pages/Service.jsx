@@ -2,7 +2,7 @@ import ServicesSection from "../Components/ServicesSection";
 import Testimonails from "../Components/Testimonails";
 
 import PagesHeader from "../Components/PagesHeader";
-import SevicesBg from "../assets/HeaderAllPages/service.jpg";
+import SevicesBg from "../assets/HeaderAllPages/service.jpeg";
 
 export default function Service() {
   return (

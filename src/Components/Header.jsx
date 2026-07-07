@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import img1 from "../assets/header/slider1.avif";
-import img2 from "../assets/header/slider2.avif";
-import img3 from "../assets/header/slider3.avif";
+import img1 from "../assets/header/img1.jpeg";
+import img2 from "../assets/header/img2.jpeg";
+import img3 from "../assets/header/img3.jpeg";
 
 export default function Header() {
   const slides = [
@@ -63,7 +63,7 @@ export default function Header() {
             className="w-full h-full object-center object-cover"
           />
 
-          <div className="absolute inset-0 bg-black/80" />
+          <div className="absolute inset-0 bg-black/70" />
 
           <div className="absolute inset-0 flex justify-center md:justify-start items-center">
             <div className="ml-1 lg:ml-25 px-6 md:px-12 pt-20 md:pt-32 lg:pt-40 max-w-7xl text-white">

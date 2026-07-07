@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import MoraBg from "../assets/HeaderAllPages/mora.jpg";
+import MoraBg from "../assets/HeaderAllPages/mora.jpeg";
 
 export default function Mora() {
   return (

@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import ContactBg from "../assets/HeaderAllPages/contact.jpg";
+import ContactBg from "../assets/HeaderAllPages/contact.jpeg";
 import { MapPin, Mail, MessageCircle } from "lucide-react";
 
 export default function Contact() {

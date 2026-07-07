@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import companyProfileBg from "../assets/HeaderAllPages/company.avif";
+import companyProfileBg from "../assets/HeaderAllPages/company.jpeg";
 
 export default function CompanyProfile() {
   return (
