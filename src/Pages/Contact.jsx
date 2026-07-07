@@ -43,7 +43,7 @@ function ContactUs() {
                     Office Address
                   </h3>
                   <p className="font-light text-charcol md:text-[15px] text-sm">
-                    New Abadi Kot Abdullah, Batapur Lahore
+                    Furqan street, Bata Gate No.3, opp. HBL Bank,
                   </p>
                 </div>
               </div>

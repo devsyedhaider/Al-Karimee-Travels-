@@ -121,3 +121,24 @@ export const testimonials = [
     text: "Very reliable and trustworthy service. They made my first Umrah journey smooth and memorable. Highly recommended for families.",
   },
 ];
+
+// Stats Data
+
+export const StatsData = [
+  {
+    number: "15+",
+    title: "Years Experience",
+  },
+  {
+    number: "5000+",
+    title: "Happy Pilgrims",
+  },
+  {
+    number: "100+",
+    title: "Successful Trips",
+  },
+  {
+    number: "24/7",
+    title: "Customer Support",
+  },
+];
