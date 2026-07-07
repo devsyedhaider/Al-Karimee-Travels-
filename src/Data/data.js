@@ -23,6 +23,7 @@ export const navLinks = [
   { name: "Ziarat", path: "/ziarat" },
   { name: "Services", path: "/service" },
   { name: "Mora", path: "/mora" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
 

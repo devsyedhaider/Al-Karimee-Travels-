@@ -17,7 +17,7 @@ export default function Navbar() {
           <img src={logo} alt="Logo" className="h-10 lg:h-12 object-contain" />
         </Link>
 
-        <nav className="hidden lg:flex gap-7">
+        <nav className="hidden min-[1050px]:flex gap-7">
           {navLinks.map((item, i) => (
             <NavLink
               key={i}
@@ -33,7 +33,10 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="min-[1050px]:hidden"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>

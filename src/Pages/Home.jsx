@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Testimonails from "../Components/Testimonails";
 import ServicesSection from "../Components/ServicesSection";
 import Header from "../Components/Header";
+import GallerySection from "../Components/GallerySection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="mt-5 md:mt-5">
         <TravelSection />
         <ServicesSection />
+        <GallerySection />
         <Testimonails />
       </div>
     </div>
