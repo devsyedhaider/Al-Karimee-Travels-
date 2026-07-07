@@ -42,14 +42,14 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`fixed inset-0 bg-black/40 md:hidden transition-opacity ${
+        className={`fixed inset-0 bg-black/40 min-[1050px]:hidden transition-opacity ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={() => setIsOpen(false)}
       />
 
       <div
-        className={`fixed top-0 left-0 h-full w-72 bg-white text-gray-800 md:hidden transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 h-full w-72 bg-white text-gray-800 min-[1050px]:hidden transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
