@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
+import { ExternalLink } from "lucide-react";
+
 import PagesHeader from "../Components/PagesHeader";
 import companyProfileBg from "../assets/HeaderAllPages/company.jpeg";
 import { StatsData } from "../Data/data";
 import ServiceSection from "../Components/ServicesSection";
 import Testimonails from "../Components/Testimonails";
 import CEOIMG from "../assets/Ceo/CEOIMG.jpeg";
+
+import certificate1 from "../assets/certificates/certificate1.jpg";
+import certificate2 from "../assets/certificates/certificate2.jpg";
+import certificate3 from "../assets/certificates/certificate3.jpg";
 
 function Counter({ value }) {
   const [count, setCount] = useState(0);
@@ -40,6 +46,7 @@ export default function CompanyProfile() {
 
       <CompanyProfileSection />
       <CeoSection />
+      <AwardsSection />
       <ServiceSection />
       <Testimonails />
     </div>
@@ -156,5 +163,53 @@ function CeoSection() {
         </div>
       </div>
     </div>
+  );
+}
+
+const certificates = [certificate1, certificate2, certificate3];
+
+function AwardsSection() {
+  return (
+    <section className="py-16 md:py-24">
+      <div className="mx-auto px-4 max-w-7xl">
+        <div className="mb-12 text-center">
+          <h2 className="font-bold text-black text-4xl md:text-6xl">
+            Awards & <span className="text-main">Certifications</span>
+          </h2>
+
+          <p className="mx-auto mt-7 max-w-2xl font-light text-charcol text-lg">
+            Our achievements and industry-recognized certifications reflect our
+            commitment to excellence, professionalism, and trusted travel
+            services.
+          </p>
+        </div>
+
+        <div className="gap-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {certificates.map((image, index) => (
+            <div
+              key={index}
+              className="group relative bg-gray-100 shadow-sm hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-500"
+            >
+              <img
+                src={image}
+                alt={`Certificate ${index + 1}`}
+                className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+              />
+
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-500"></div>
+
+              <a
+                href={image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="right-4 bottom-4 absolute flex justify-center items-center bg-orange-500 hover:bg-orange-600 shadow-lg rounded-full w-12 h-12 text-white hover:scale-110 transition-all duration-300"
+              >
+                <ExternalLink size={20} />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
