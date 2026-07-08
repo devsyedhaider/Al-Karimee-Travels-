@@ -4,6 +4,7 @@ import companyProfileBg from "../assets/HeaderAllPages/company.jpeg";
 import { StatsData } from "../Data/data";
 import ServiceSection from "../Components/ServicesSection";
 import Testimonails from "../Components/Testimonails";
+import CEOIMG from "../assets/Ceo/CEOIMG.jpeg";
 
 function Counter({ value }) {
   const [count, setCount] = useState(0);
@@ -113,7 +114,7 @@ function CeoSection() {
           <div className="-top-5 -left-5 absolute bg-primary/20 rounded-full w-24 h-24"></div>
 
           <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+            src={CEOIMG}
             alt="CEO Al Karimee Travels"
             className="relative shadow-xl mx-auto rounded-[25px] w-full max-w-md h-72 sm:h-96 md:h-112 lg:h-135 object-cover hover:scale-105 transition duration-500"
           />
@@ -146,7 +147,7 @@ function CeoSection() {
           </div>
 
           <div className="mt-8 pl-5 border-primary border-l-4">
-            <h3 className="font-bold text-main text-xl">Malik Hassnain Raza</h3>
+            <h3 className="font-bold text-main text-xl">Hussnain Raza</h3>
 
             <p className="mt-1 font-semibold text-black">
               CEO, Al Karimee Travels
