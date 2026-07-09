@@ -22,6 +22,7 @@ export default function Navbar() {
             <NavLink
               key={i}
               to={item.path}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={({ isActive }) =>
                 `font-medium transition hover:text-golden text-base lg:text-lg ${
                   isActive ? "text-golden" : "text-charcol"
@@ -63,6 +64,7 @@ export default function Navbar() {
               key={i}
               to={item.path}
               onClick={() => setIsOpen(false)}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="py-5 border-gray-200 border-b font-medium text-gray-700 hover:text-golden transition"
             >
               {item.name}
