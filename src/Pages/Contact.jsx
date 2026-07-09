@@ -1,6 +1,10 @@
+import { motion } from "framer-motion";
+import { MapPin, Mail, MessageCircle } from "lucide-react";
+
 import PagesHeader from "../Components/PagesHeader";
 import ContactBg from "../assets/HeaderAllPages/contact.jpeg";
-import { MapPin, Mail, MessageCircle } from "lucide-react";
+
+import { fadeUp, fadeLeft, fadeRight, staggerContainer } from "../animations";
 
 export default function Contact() {
   return (
@@ -8,9 +12,10 @@ export default function Contact() {
       <div className="mb-10 md:mb-20">
         <PagesHeader
           bgImage={ContactBg}
-          title="Al Karimee Travels Contact Us "
+          title="Al Karimee Travels Contact Us"
         />
       </div>
+
       <div className="container">
         <ContactUs />
         <ContactMap />
@@ -24,61 +29,91 @@ function ContactUs() {
     <section className="pb-20 md:pb-30">
       <div className="mx-auto px-4 container">
         <div className="items-start gap-12 grid lg:grid-cols-2">
-          <div>
+          <motion.div
+            variants={fadeLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <div className="mb-10">
               <h2 className="font-bold text-gray-900 text-4xl md:text-5xl">
                 Contact <span className="text-main">Us</span>
               </h2>
+
               <p className="mt-5 max-w-xl font-light text-charcol text-md md:text-base">
                 Feel free to reach out for Hajj, Umrah and travel inquiries. We
                 are here 24/7 to assist you with quick response.
               </p>
             </div>
 
-            <div className="space-y-8 md:space-y-12">
-              <div className="flex items-start gap-6">
-                <MapPin className="mt-2 w-6 h-6 text-main" />
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="space-y-8 md:space-y-12"
+            >
+              <motion.div variants={fadeUp} className="flex items-start gap-6">
+                <motion.div whileHover={{ scale: 1.2 }}>
+                  <MapPin className="mt-2 w-6 h-6 text-main" />
+                </motion.div>
+
                 <div>
                   <h3 className="mb-1 font-semibold text-main text-lg uppercase">
                     Office Address
                   </h3>
+
                   <p className="font-light text-charcol md:text-[15px] text-sm">
                     Furqan street, Bata Gate No.3, opp. HBL Bank,
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <a
+              <motion.a
+                variants={fadeUp}
                 href="https://wa.me/923022471111"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-start gap-6 hover:opacity-80 transition"
+                whileHover={{ x: 8 }}
+                className="flex items-start gap-6 transition"
               >
                 <MessageCircle className="mt-2 w-6 h-6 text-main" />
+
                 <div>
                   <h3 className="mb-1 font-semibold text-main text-lg uppercase">
                     Call / WhatsApp
                   </h3>
+
                   <p className="text-charcol">0302-2471111</p>
                 </div>
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
+                variants={fadeUp}
                 href="mailto:alkarimee@hotmail.com"
-                className="flex items-start gap-6 hover:opacity-80 transition"
+                whileHover={{ x: 8 }}
+                className="flex items-start gap-6 transition"
               >
                 <Mail className="mt-2 w-6 h-6 text-main" />
+
                 <div>
                   <h3 className="mb-1 font-semibold text-main text-lg uppercase">
                     Email Us
                   </h3>
+
                   <p className="text-charcol">alkarimee@hotmail.com</p>
                 </div>
-              </a>
-            </div>
-          </div>
+              </motion.a>
+            </motion.div>
+          </motion.div>
 
-          <div className="bg-white shadow-xl p-6 md:p-10 border border-gray-100 rounded-3xl">
+          <motion.div
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="bg-white shadow-xl p-6 md:p-10 border border-gray-100 rounded-3xl"
+          >
             <h3 className="mb-6 font-semibold text-gray-900 text-2xl">
               Send Message
             </h3>
@@ -108,11 +143,15 @@ function ContactUs() {
                 className="px-4 py-3 border border-gray-200 focus:border-main rounded-xl outline-none w-full"
               />
 
-              <button className="bg-main hover:brightness-95 py-3 rounded-xl w-full font-semibold text-white transition cursor-pointer">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-main py-3 rounded-xl w-full font-semibold text-white transition cursor-pointer"
+              >
                 Send Message
-              </button>
+              </motion.button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
@@ -121,13 +160,20 @@ function ContactUs() {
 
 function ContactMap() {
   return (
-    <div className="mx-auto mt-16 px-4 container">
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="mx-auto mt-16 px-4 container"
+    >
       <div className="bg-white shadow-xl border border-gray-100 rounded-3xl overflow-hidden">
         <div className="p-6 border-b">
           <h3 className="font-bold text-gray-900 text-3xl md:text-5xl">
             Our <span className="text-main">Location</span>
           </h3>
-          <p className="mt-2 font-light text-[14px] text-charcol d:text-lg">
+
+          <p className="mt-2 font-light text-[14px] text-charcol md:text-lg">
             Furqan street, Bata Gate No.3, opp. HBL Bank,
           </p>
         </div>
@@ -141,6 +187,6 @@ function ContactMap() {
           src="https://www.google.com/maps?q=Furqan%20Street%2C%20Bata%20Gate%20No.3%2C%20Batapur%20Lahore&z=17&output=embed"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
