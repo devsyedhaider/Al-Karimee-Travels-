@@ -65,8 +65,8 @@ const Footer = () => {
             />
 
             <p className="mt-6 text-white/75 leading-8">
-              Air Guide Travel Pakistan is your trusted partner for Hajj, Umrah,
-              Ziyarat and international travel services with professional
+              Al Karimee Travel Pakistan is your trusted partner for Hajj,
+              Umrah, Ziyarat and international travel services with professional
               guidance and years of experience.
             </p>
 

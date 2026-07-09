@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import img1 from "../assets/header/img1.jpeg";
+import img1 from "../assets/header/img4.jpeg";
 import img2 from "../assets/header/img2.jpeg";
 import img3 from "../assets/header/img3.jpeg";
 
 export default function Header() {
   const slides = [
     {
-      image: img1,
+      image: img3,
       badge: "Trusted Hajj Services",
       title: "Start Your Spiritual Journey",
       subtitle: "Hajj Packages 2026",
@@ -23,7 +23,7 @@ export default function Header() {
       desc: "Book affordable Umrah packages with trusted travel arrangements, luxury and economy hotel options, transport services, group and family packages, and complete assistance from departure to return.",
     },
     {
-      image: img3,
+      image: img1,
       badge: "Ziarat Tours",
       title: "Explore Sacred Islamic Places",
       subtitle: "Spiritual Tours",

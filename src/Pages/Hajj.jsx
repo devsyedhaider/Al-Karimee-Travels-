@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import HajjBg from "../assets/HeaderAllPages/hajj.jpeg";
+import HajjBg from "../assets/header/img3.jpeg";
 
 export default function Hajj() {
   return (
