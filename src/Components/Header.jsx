@@ -109,19 +109,21 @@ export default function Header() {
         </div>
       ))}
 
-      <button
-        onClick={prevSlide}
-        className="top-1/2 left-4 absolute bg-black/40 hover:bg-black/60 p-3 rounded-full text-white -translate-y-1/2"
-      >
-        <ChevronLeft size={28} />
-      </button>
+      <div className="hidden sm:block">
+        <button
+          onClick={prevSlide}
+          className="top-1/2 left-4 absolute bg-black/40 hover:bg-black/60 p-3 rounded-full text-white -translate-y-1/2"
+        >
+          <ChevronLeft size={28} />
+        </button>
 
-      <button
-        onClick={nextSlide}
-        className="top-1/2 right-4 absolute bg-black/40 hover:bg-black/60 p-3 rounded-full text-white -translate-y-1/2"
-      >
-        <ChevronRight size={28} />
-      </button>
+        <button
+          onClick={nextSlide}
+          className="top-1/2 right-4 absolute bg-black/40 hover:bg-black/60 p-3 rounded-full text-white -translate-y-1/2"
+        >
+          <ChevronRight size={28} />
+        </button>
+      </div>
 
       <div className="bottom-6 left-1/2 absolute flex gap-2 -translate-x-1/2">
         {slides.map((_, index) => (
