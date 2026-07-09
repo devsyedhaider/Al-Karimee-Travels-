@@ -1,14 +1,23 @@
 import { FaFacebookF, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import { FooterLinks } from "../Data/data";
 import { Link } from "react-router-dom";
 import logo from "../assets/footerlogo.png";
 
+import { fadeUp, fadeLeft, fadeRight, staggerContainer } from "../animations";
+
 const Footer = () => {
   return (
     <footer className="bg-main mt-32 text-white">
       <div className="relative container">
-        <div className="bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] rounded-3xl -translate-y-1/6 md:-translate-y-1/4">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] rounded-3xl -translate-y-1/6 md:-translate-y-1/4"
+        >
           <div className="flex lg:flex-row flex-col justify-between items-center gap-8 p-8 lg:px-12 lg:py-10">
             <div>
               <span className="font-semibold text-golden uppercase tracking-[3px]">
@@ -37,15 +46,21 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="-mt-8 pb-10 container">
-        <div className="flex lg:flex-row flex-col justify-between gap-16 pb-14 border-white/10 border-b">
-          <div className="max-w-sm">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex lg:flex-row flex-col justify-between gap-16 pb-14 border-white/10 border-b"
+        >
+          <motion.div variants={fadeLeft} className="max-w-sm">
             <img
               src={logo}
-              alt="Air Guide Travel"
+              alt="Al Karimee Travel"
               className="h-26 object-contain"
             />
 
@@ -56,75 +71,70 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4 mt-8">
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.15,
+                  rotate: 8,
+                }}
                 href="https://www.facebook.com/people/Al-Karimee-Travels-Tours-Pvt-Ltd/61550221046678/"
                 target="_blank"
                 className="flex justify-center items-center hover:bg-golden border border-white/20 rounded-full w-11 h-11 hover:text-main transition duration-300"
               >
                 <FaFacebookF />
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
+                whileHover={{
+                  scale: 1.15,
+                  rotate: -8,
+                }}
                 href="https://wa.me/03022471111"
                 target="_blank"
                 className="flex justify-center items-center hover:bg-golden border border-white/20 rounded-full w-11 h-11 hover:text-main transition duration-300"
               >
                 <FaWhatsapp />
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={fadeUp}>
             <h3 className="mb-8 font-heading font-semibold text-golden text-xl">
               Quick Contact
             </h3>
 
             <div className="space-y-8">
-              <div>
-                <p className="font-semibold">CEO</p>
+              {[
+                {
+                  title: "CEO",
+                  phone: "+92 300 8234673",
+                },
+                {
+                  title: "Hajj & Umrah",
+                  phone: "+92 300 2163601",
+                },
+                {
+                  title: "Ziyarat",
+                  phone: "+92 321 2221961",
+                },
+              ].map((item) => (
+                <div key={item.title}>
+                  <p className="font-semibold">{item.title}</p>
 
-                <p className="mt-1 text-white/70">Hussnain Raza</p>
+                  <p className="mt-1 text-white/70">Hussnain Raza</p>
 
-                <a
-                  href="tel:+923022471111"
-                  className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
-                >
-                  <FaPhoneAlt className="text-sm" />
-                  +92 300 8234673
-                </a>
-              </div>
-
-              <div>
-                <p className="font-semibold">Hajj & Umrah</p>
-
-                <p className="mt-1 text-white/70">Hussnain Raza</p>
-
-                <a
-                  href="tel:+9230202471111"
-                  className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
-                >
-                  <FaPhoneAlt className="text-sm" />
-                  +92 300 2163601
-                </a>
-              </div>
-
-              <div>
-                <p className="font-semibold">Ziyarat</p>
-
-                <p className="mt-1 text-white/70">Hussnain Raza</p>
-
-                <a
-                  href="tel:+923212221961"
-                  className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
-                >
-                  <FaPhoneAlt className="text-sm" />
-                  +92 321 2221961
-                </a>
-              </div>
+                  <a
+                    href={`tel:${item.phone}`}
+                    className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
+                  >
+                    <FaPhoneAlt className="text-sm" />
+                    {item.phone}
+                  </a>
+                </div>
+              ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={fadeRight}>
             <h3 className="mb-8 font-heading font-semibold text-golden text-xl">
               Quick Links
             </h3>
@@ -138,25 +148,29 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="flex lg:flex-row flex-col justify-between items-center gap-6 py-6 text-white/60 text-sm">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex lg:flex-row flex-col justify-between items-center gap-6 py-6 text-white/60 text-sm"
+        >
           <p>
             © {new Date().getFullYear()} Al Karimee Travel Pakistan. All Rights
             Reserved.
           </p>
 
-          <div className="flex gap-6">
-            <a
-              href="https://github.com/devsyedhaider"
-              target="_blank"
-              className="hover:text-golden transition"
-            >
-              Designed by DevSyedHaider
-            </a>
-          </div>
-        </div>
+          <a
+            href="https://github.com/devsyedhaider"
+            target="_blank"
+            className="hover:text-golden transition"
+          >
+            Designed by DevSyedHaider
+          </a>
+        </motion.div>
       </div>
     </footer>
   );

@@ -6,6 +6,9 @@ import ServicesSection from "../Components/ServicesSection";
 import Header from "../Components/Header";
 import GallerySection from "../Components/GallerySection";
 
+import Animate from "../animations/ Animate";
+import { fadeUp, fadeLeft, fadeRight } from "../animations";
+
 export default function Home() {
   return (
     <div className="bg-white">
@@ -24,13 +27,14 @@ function TravelSection() {
   return (
     <section className="relative py-12 md:py-16 lg:py-20 overflow-hidden">
       <div className="mx-auto px-4 container">
-        <div className="mx-auto max-w-4xl text-center">
+        <Animate variants={fadeUp} className="mx-auto max-w-4xl text-center">
           <p className="font-bold text-golden text-xs sm:text-sm uppercase tracking-[3px]">
             Trusted Hajj & Umrah Experts
           </p>
 
           <h2 className="mt-4 font-bold text-black text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
-            The Leading Hajj & Umrah <br className="hidden md:block" />
+            The Leading Hajj & Umrah
+            <br className="hidden md:block" />
             Travel <span className="text-main">Company in Pakistan</span>
           </h2>
 
@@ -38,11 +42,14 @@ function TravelSection() {
             Safe, comfortable and spiritually fulfilling Hajj & Umrah packages
             designed with care for your peace of mind.
           </p>
-        </div>
+        </Animate>
 
         <div className="gap-6 lg:gap-8 grid grid-cols-1 lg:grid-cols-2 mt-12 lg:mt-16">
-          {/* Hajj */}
-          <div className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all hover:-translate-y-2 duration-500">
+          <Animate
+            variants={fadeLeft}
+            className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all hover:-translate-y-2 duration-500"
+            whileHover={{ y: -10 }}
+          >
             <img
               src={hajjImg}
               alt="Hajj"
@@ -73,10 +80,13 @@ function TravelSection() {
                 Explore Packages
               </Link>
             </div>
-          </div>
+          </Animate>
 
-          {/* Umrah */}
-          <div className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all hover:-translate-y-2 duration-500">
+          <Animate
+            variants={fadeRight}
+            className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all hover:-translate-y-2 duration-500"
+            whileHover={{ y: -10 }}
+          >
             <img
               src={UmrahImg}
               alt="Umrah"
@@ -107,10 +117,14 @@ function TravelSection() {
                 Explore Packages
               </Link>
             </div>
-          </div>
+          </Animate>
         </div>
 
-        <div className="mx-auto mt-12 md:mt-16 max-w-3xl text-center">
+        <Animate
+          variants={fadeUp}
+          delay={0.2}
+          className="mx-auto mt-12 md:mt-16 max-w-3xl text-center"
+        >
           <h4 className="font-semibold text-main text-2xl sm:text-3xl">
             Travel Once — Remember Forever
           </h4>
@@ -120,7 +134,7 @@ function TravelSection() {
             and accommodation to transportation—so you can focus entirely on
             your spiritual experience with complete peace of mind.
           </p>
-        </div>
+        </Animate>
       </div>
     </section>
   );

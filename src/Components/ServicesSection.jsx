@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+
 import { ServicesData } from "../Data/data";
+import { fadeUp, staggerContainer } from "../animations";
 
 export default function ServicesSection() {
   return (
     <section className="py-14 md:py-20">
       <div className="mx-auto px-4 container">
-        <div className="mx-auto mb-14 max-w-4xl text-center">
+        <motion.div
+          className="mx-auto mb-14 max-w-4xl text-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <p className="font-bold text-golden text-xs sm:text-sm uppercase tracking-[3px]">
             Our Services
           </p>
@@ -21,16 +30,30 @@ export default function ServicesSection() {
             Discover premium travel experiences designed with comfort,
             reliability and complete peace of mind for every journey.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="gap-6 grid grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl">
+        <motion.div
+          className="gap-6 grid grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {ServicesData.map((service) => {
             const Icon = service.icon;
 
             return (
-              <div
+              <motion.div
                 key={service.title}
-                className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all hover:-translate-y-2 duration-500"
+                variants={fadeUp}
+                whileHover={{
+                  y: -10,
+                  scale: 1.02,
+                }}
+                transition={{
+                  duration: 0.35,
+                }}
+                className="group relative shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all duration-500"
               >
                 <img
                   src={service.image}
@@ -57,7 +80,10 @@ export default function ServicesSection() {
                     <Link
                       to="/service"
                       onClick={() =>
-                        window.scrollTo({ top: 0, behavior: "smooth" })
+                        window.scrollTo({
+                          top: 0,
+                          behavior: "smooth",
+                        })
                       }
                       className="inline-flex items-center gap-2 hover:gap-3 mt-4 sm:mt-5 font-semibold text-white text-sm sm:text-base transition-all duration-300"
                     >
@@ -66,10 +92,10 @@ export default function ServicesSection() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

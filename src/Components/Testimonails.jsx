@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
 import { testimonials } from "../Data/data";
+import { fadeUp, staggerContainer } from "../animations";
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
 
-  // Safe responsive handler (prevents black screen)
   useEffect(() => {
     const updateSize = () => {
       const width = window.innerWidth || 1024;
@@ -30,6 +31,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     const interval = setInterval(nextSlide, 4000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -40,60 +42,105 @@ export default function Testimonials() {
   return (
     <section className="relative py-20 overflow-hidden">
       <div className="mx-auto px-4 container">
-        <div className="mx-auto mb-14 max-w-2xl text-center">
+        <motion.div
+          className="mx-auto mb-14 max-w-2xl text-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <h2 className="font-bold text-gray-900 text-4xl md:text-5xl">
             What Our <span className="text-main">Clients Say</span>
           </h2>
+
           <p className="mt-4 text-gray-600">
             Real experiences from our happy customers.
           </p>
-        </div>
+        </motion.div>
 
-        <button
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
           onClick={prevSlide}
           className="top-1/2 left-3 md:left-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
         >
           <ChevronLeft />
-        </button>
+        </motion.button>
 
-        <button
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
           onClick={nextSlide}
           className="top-1/2 right-3 md:right-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
         >
           <ChevronRight />
-        </button>
+        </motion.button>
 
-        <div
+        <motion.div
           className={`grid gap-8 ${
             itemsToShow === 1 ? "grid-cols-1" : "md:grid-cols-3"
           }`}
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
         >
           <AnimatePresence mode="wait">
             {visible.map((item, i) => (
               <motion.div
                 key={item.name + i}
-                initial={{ opacity: 0, x: 40 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -40 }}
-                transition={{ duration: 0.4 }}
-                className="bg-white shadow-lg p-6 border border-gray-100 rounded-2xl"
+                variants={fadeUp}
+                initial={{
+                  opacity: 0,
+                  x: 40,
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  x: -40,
+                }}
+                transition={{
+                  duration: 0.4,
+                }}
+                whileHover={{
+                  y: -8,
+                  scale: 1.02,
+                }}
+                className="bg-white shadow-lg hover:shadow-2xl p-6 border border-gray-100 rounded-2xl transition-shadow"
               >
                 <p className="mt-6 text-gray-600">{item.text}</p>
 
                 <div className="flex items-center gap-4 mt-6">
-                  <img
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                    }}
                     src={item.image}
+                    alt={item.name}
                     className="border-2 border-amber-400 rounded-full w-12 h-12"
                   />
+
                   <div>
                     <h4 className="font-semibold">{item.name}</h4>
+
                     <p className="text-gray-500 text-sm">{item.role}</p>
                   </div>
                 </div>
               </motion.div>
             ))}
           </AnimatePresence>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

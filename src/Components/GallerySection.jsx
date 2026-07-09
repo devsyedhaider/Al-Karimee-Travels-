@@ -1,9 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import gallery1 from "../assets/gallery/1.jpeg";
 import gallery2 from "../assets/gallery/2.jpeg";
 import gallery3 from "../assets/gallery/3.jpeg";
+
+import { fadeUp, fadeLeft, fadeRight, staggerContainer } from "../animations";
 
 export default function GallerySection() {
   const images = [
@@ -43,7 +46,14 @@ export default function GallerySection() {
       <div className="top-1/2 left-1/2 absolute bg-primary/10 blur-[100px] rounded-full w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="relative mx-auto px-4 container">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
+        {/* Heading */}
+        <motion.div
+          className="mx-auto mb-12 max-w-3xl text-center"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <span className="font-semibold text-golden text-sm uppercase tracking-[0.25em]">
             Our Memories
           </span>
@@ -57,47 +67,83 @@ export default function GallerySection() {
             Explore the beautiful memories of our pilgrims during Hajj, Umrah,
             and Ziyarat journeys.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="gap-6 grid md:grid-cols-3">
+        <motion.div
+          className="gap-6 grid md:grid-cols-3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {images.map((item, index) => (
-            <Link
-              to="/gallery"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            <motion.div
               key={index}
-              className="group relative shadow-2xl border border-white/10 rounded-[30px] h-65 sm:h-95 overflow-hidden"
+              variants={
+                index === 1 ? fadeUp : index === 0 ? fadeLeft : fadeRight
+              }
+              whileHover={{
+                y: -10,
+                scale: 1.03,
+              }}
+              transition={{
+                duration: 0.4,
+              }}
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-              />
+              <Link
+                to="/gallery"
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  })
+                }
+                className="group block relative shadow-2xl border border-white/10 rounded-[30px] h-65 sm:h-95 overflow-hidden"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                />
 
-              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
-              <div className="bottom-0 left-0 absolute p-7">
-                <h3 className="font-bold text-white text-2xl uppercase">
-                  {item.title}
-                </h3>
+                <div className="bottom-0 left-0 absolute p-7">
+                  <h3 className="font-bold text-white text-2xl uppercase">
+                    {item.title}
+                  </h3>
 
-                <div className="flex items-center gap-2 mt-3 font-semibold text-primary text-white">
-                  View Gallery
-                  <ArrowRight className="w-5 h-5 transition group-hover:translate-x-2 duration-300" />
+                  <div className="flex items-center gap-2 mt-3 font-semibold text-white">
+                    View Gallery
+                    <ArrowRight className="w-5 h-5 transition group-hover:translate-x-2 duration-300" />
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
-        </div>
-        <div className="flex justify-center mt-12">
+        </motion.div>
+
+        <motion.div
+          className="flex justify-center mt-12"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <Link
             to="/gallery"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
             className="group flex items-center gap-3 bg-golden bg-primary shadow-lg hover:shadow-2xl px-8 py-4 rounded-full font-semibold text-white transition hover:-translate-y-1 duration-300"
           >
             View Picture Gallery
             <ArrowRight className="w-5 h-5 transition group-hover:translate-x-2 duration-300" />
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
