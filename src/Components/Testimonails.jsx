@@ -58,31 +58,33 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            scale: 0.9,
-          }}
-          onClick={prevSlide}
-          className="top-1/2 left-3 md:left-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
-        >
-          <ChevronLeft />
-        </motion.button>
+        <div className="hidden sm:block">
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+            }}
+            whileTap={{
+              scale: 0.9,
+            }}
+            onClick={prevSlide}
+            className="top-1/2 left-3 md:left-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
+          >
+            <ChevronLeft />
+          </motion.button>
 
-        <motion.button
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            scale: 0.9,
-          }}
-          onClick={nextSlide}
-          className="top-1/2 right-3 md:right-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
-        >
-          <ChevronRight />
-        </motion.button>
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+            }}
+            whileTap={{
+              scale: 0.9,
+            }}
+            onClick={nextSlide}
+            className="top-1/2 right-3 md:right-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
+          >
+            <ChevronRight />
+          </motion.button>
+        </div>
 
         <motion.div
           className={`grid gap-8 ${

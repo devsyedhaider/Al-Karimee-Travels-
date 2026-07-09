@@ -106,15 +106,15 @@ const Footer = () => {
               {[
                 {
                   title: "CEO",
-                  phone: "+92 300 8234673",
+                  phone: "+92 302 2471111",
                 },
                 {
                   title: "Hajj & Umrah",
-                  phone: "+92 300 2163601",
+                  phone: "+92 302 2471111",
                 },
                 {
                   title: "Ziyarat",
-                  phone: "+92 321 2221961",
+                  phone: "+92 302 2471111",
                 },
               ].map((item) => (
                 <div key={item.title}>

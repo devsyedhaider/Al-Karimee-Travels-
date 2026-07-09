@@ -14,18 +14,20 @@ import Gallery from "./Pages/Gallery";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/companyprofile" element={<CompanyProfile />} />
-        <Route path="/hajj" element={<Hajj />} />
-        <Route path="/umrah" element={<Umrah />} />
-        <Route path="/Ziarat" element={<Ziarat />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/mora" element={<Mora />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-      </Route>
-    </Routes>
+    <div className="overflow-hidden">
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/companyprofile" element={<CompanyProfile />} />
+          <Route path="/hajj" element={<Hajj />} />
+          <Route path="/umrah" element={<Umrah />} />
+          <Route path="/Ziarat" element={<Ziarat />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/mora" element={<Mora />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </div>
   );
 }
