@@ -83,10 +83,10 @@ const Footer = () => {
               <div>
                 <p className="font-semibold">CEO</p>
 
-                <p className="mt-1 text-white/70">Raza A. Mamdani</p>
+                <p className="mt-1 text-white/70">Hussnain Raza</p>
 
                 <a
-                  href="tel:+923008234673"
+                  href="tel:+923022471111"
                   className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
                 >
                   <FaPhoneAlt className="text-sm" />
@@ -97,10 +97,10 @@ const Footer = () => {
               <div>
                 <p className="font-semibold">Hajj & Umrah</p>
 
-                <p className="mt-1 text-white/70">Raza Mamdani</p>
+                <p className="mt-1 text-white/70">Hussnain Raza</p>
 
                 <a
-                  href="tel:+923002163601"
+                  href="tel:+9230202471111"
                   className="flex items-center gap-2 mt-2 text-white/80 hover:text-golden transition"
                 >
                   <FaPhoneAlt className="text-sm" />
@@ -111,7 +111,7 @@ const Footer = () => {
               <div>
                 <p className="font-semibold">Ziyarat</p>
 
-                <p className="mt-1 text-white/70">Mohsin Nayani</p>
+                <p className="mt-1 text-white/70">Hussnain Raza</p>
 
                 <a
                   href="tel:+923212221961"
