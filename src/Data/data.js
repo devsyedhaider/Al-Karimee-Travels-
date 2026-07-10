@@ -1,4 +1,13 @@
 import { Plane, Globe2, Landmark, MapPinned } from "lucide-react";
+import ayesha from "../assets/testimonials/ayesha-khan.jpg";
+import muhammad from "../assets/testimonials/muhammad-ali.jpg";
+import sara from "../assets/testimonials/sara-ahmed.jpg";
+import hassan from "../assets/testimonials/hassan-raza.jpg";
+import fatima from "../assets/testimonials/fatima-noor.jpg";
+import usman from "../assets/testimonials/usman-tariq.jpg";
+import zainab from "../assets/testimonials/zainab-ali.jpg";
+import ahmed from "../assets/testimonials/ahmed-bilal.jpg";
+import maryam from "../assets/testimonials/maryam-sheikh.jpg";
 
 import iraqImg from "../assets/home/iraqImg.jpg";
 import visaImg from "../assets/home/visaImg.jpg";
@@ -70,55 +79,55 @@ export const testimonials = [
   {
     name: "Ayesha Khan",
     role: "Karachi, Pakistan",
-    image: "https://i.pravatar.cc/150?img=47",
+    image: ayesha,
     text: "My Umrah journey with this travel service was absolutely peaceful and well organized. From visa processing to hotel arrangements in Makkah and Madinah, everything was handled professionally without any stress.",
   },
   {
     name: "Muhammad Ali",
     role: "Lahore, Pakistan",
-    image: "https://i.pravatar.cc/150?img=12",
+    image: muhammad,
     text: "I booked my Hajj package through them and I must say the experience was beyond expectations. The guidance, transportation, and accommodation were all managed perfectly.",
   },
   {
     name: "Sara Ahmed",
     role: "Islamabad, Pakistan",
-    image: "https://i.pravatar.cc/150?img=32",
+    image: sara,
     text: "Highly recommended travel agency for Hajj and Umrah. Their team stayed in contact throughout the journey and made everything very easy and comfortable.",
   },
   {
     name: "Hassan Raza",
     role: "Faisalabad, Pakistan",
-    image: "https://i.pravatar.cc/150?img=22",
+    image: hassan,
     text: "Very professional service. They handled all documentation and travel arrangements smoothly. I didn’t face any issues during my entire trip.",
   },
   {
     name: "Fatima Noor",
     role: "Rawalpindi, Pakistan",
-    image: "https://i.pravatar.cc/150?img=25",
+    image: fatima,
     text: "The experience was spiritually fulfilling and completely stress-free. The hotels were near Haram and the transport was always on time.",
   },
   {
     name: "Usman Tariq",
     role: "Multan, Pakistan",
-    image: "https://i.pravatar.cc/150?img=15",
+    image: usman,
     text: "One of the best travel agencies I have dealt with. Their staff is very cooperative and responsive. Everything was well planned from start to finish.",
   },
   {
     name: "Zainab Ali",
     role: "Hyderabad, Pakistan",
-    image: "https://i.pravatar.cc/150?img=5",
+    image: zainab,
     text: "Excellent service for Umrah packages. The entire journey was smooth and well guided. I felt completely safe and supported throughout.",
   },
   {
     name: "Ahmed Bilal",
     role: "Peshawar, Pakistan",
-    image: "https://i.pravatar.cc/150?img=9",
+    image: ahmed,
     text: "Great experience overall. The travel arrangements, visa processing, and hotel booking were all handled very professionally.",
   },
   {
     name: "Maryam Sheikh",
     role: "Quetta, Pakistan",
-    image: "https://i.pravatar.cc/150?img=19",
+    image: maryam,
     text: "Very reliable and trustworthy service. They made my first Umrah journey smooth and memorable. Highly recommended for families.",
   },
 ];
