@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import UmrahBg from "../assets/HeaderAllPages/umrah.jpeg";
+import UmrahBg from "../assets/HeaderAllPages/umrah.jpg";
 
 export default function Umrah() {
   return (

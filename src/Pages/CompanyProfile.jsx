@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import PagesHeader from "../Components/PagesHeader";
-import companyProfileBg from "../assets/HeaderAllPages/company.jpeg";
+import companyProfileBg from "../assets/HeaderAllPages/company.jpg";
 import { StatsData } from "../Data/data";
 import ServiceSection from "../Components/ServicesSection";
 import Testimonails from "../Components/Testimonails";

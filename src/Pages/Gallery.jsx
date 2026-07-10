@@ -2,28 +2,28 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import PagesHeader from "../Components/PagesHeader";
-import GalleryBg from "../assets/HeaderAllPages/gallery.jpeg";
+import GalleryBg from "../assets/HeaderAllPages/gallery.jpg";
 import Testimonails from "../Components/Testimonails";
 
 import { fadeUp, staggerContainer } from "../animations";
 
-import img1 from "../assets/gallery/1.jpeg";
-import img2 from "../assets/gallery/2.jpeg";
-import img3 from "../assets/gallery/3.jpeg";
-import img4 from "../assets/gallery/4.jpeg";
-import img5 from "../assets/gallery/5.jpeg";
-import img6 from "../assets/gallery/6.jpeg";
-import img7 from "../assets/gallery/7.jpeg";
-import img8 from "../assets/gallery/8.jpeg";
-import img9 from "../assets/gallery/9.jpeg";
-import img10 from "../assets/gallery/10.jpeg";
-import img11 from "../assets/gallery/11.jpeg";
-import img13 from "../assets/gallery/13.jpeg";
-import img14 from "../assets/gallery/14.jpeg";
-import img15 from "../assets/gallery/15.jpeg";
-import img16 from "../assets/gallery/16.jpeg";
-import img17 from "../assets/gallery/17.jpeg";
-import img18 from "../assets/gallery/18.jpeg";
+import img1 from "../assets/gallery/1.jpg";
+import img2 from "../assets/gallery/2.jpg";
+import img3 from "../assets/gallery/3.jpg";
+import img4 from "../assets/gallery/4.jpg";
+import img5 from "../assets/gallery/5.jpg";
+import img6 from "../assets/gallery/6.jpg";
+import img7 from "../assets/gallery/7.jpg";
+import img8 from "../assets/gallery/8.jpg";
+import img9 from "../assets/gallery/9.jpg";
+import img10 from "../assets/gallery/10.jpg";
+import img11 from "../assets/gallery/11.jpg";
+import img13 from "../assets/gallery/13.jpg";
+import img14 from "../assets/gallery/14.jpg";
+import img15 from "../assets/gallery/15.jpg";
+import img16 from "../assets/gallery/16.jpg";
+import img17 from "../assets/gallery/17.jpg";
+import img18 from "../assets/gallery/18.jpg";
 import img19 from "../assets/gallery/19.jpeg";
 
 export default function Gallery() {

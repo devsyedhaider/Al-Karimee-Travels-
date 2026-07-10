@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MapPin, Mail, MessageCircle } from "lucide-react";
 
 import PagesHeader from "../Components/PagesHeader";
-import ContactBg from "../assets/HeaderAllPages/contact.jpeg";
+import ContactBg from "../assets/HeaderAllPages/contact.jpg";
 
 import { fadeUp, fadeLeft, fadeRight, staggerContainer } from "../animations";
 

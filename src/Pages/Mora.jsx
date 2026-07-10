@@ -1,6 +1,6 @@
 import PagesHeader from "../Components/PagesHeader";
 import Testimonials from "../Components/Testimonails";
-import MoraBg from "../assets/HeaderAllPages/mora.jpeg";
+import MoraBg from "../assets/HeaderAllPages/mora.jpg";
 
 import img1 from "../assets/certificates/certificate1.jpg";
 import img2 from "../assets/certificates/certificate2.jpg";
