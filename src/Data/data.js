@@ -1,13 +1,13 @@
 import { Plane, Globe2, Landmark, MapPinned } from "lucide-react";
-import ayesha from "../assets/testimonials/ayesha-khan.jpg";
-import muhammad from "../assets/testimonials/muhammad-ali.jpg";
-import sara from "../assets/testimonials/sara-ahmed.jpg";
-import hassan from "../assets/testimonials/hassan-raza.jpg";
-import fatima from "../assets/testimonials/fatima-noor.jpg";
-import usman from "../assets/testimonials/usman-tariq.jpg";
-import zainab from "../assets/testimonials/zainab-ali.jpg";
-import ahmed from "../assets/testimonials/ahmed-bilal.jpg";
-import maryam from "../assets/testimonials/maryam-sheikh.jpg";
+import ayesha from "../assets/testimonials/ayesha-khan.webp";
+import muhammad from "../assets/testimonials/muhammad-ali.webp";
+import sara from "../assets/testimonials/sara-ahmed.webp";
+import hassan from "../assets/testimonials/hassan-raza.webp";
+import fatima from "../assets/testimonials/fatima-noor.webp";
+import usman from "../assets/testimonials/usman-tariq.webp";
+import zainab from "../assets/testimonials/zainab-ali.webp";
+import ahmed from "../assets/testimonials/ahmed-bilal.webp";
+import maryam from "../assets/testimonials/maryam-sheikh.webp";
 
 import iraqImg from "../assets/home/iraqImg.jpg";
 import visaImg from "../assets/home/visaImg.jpg";
