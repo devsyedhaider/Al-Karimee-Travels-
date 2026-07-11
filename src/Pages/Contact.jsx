@@ -174,7 +174,8 @@ function ContactMap() {
           </h3>
 
           <p className="mt-2 font-light text-[14px] text-charcol md:text-lg">
-            Furqan street, Bata Gate No.3, opp. HBL Bank,
+            Raza shoes street, Bata Gate 3, oop, HBL Bank, Bata Pur, Lahore
+            53480
           </p>
         </div>
 
@@ -184,7 +185,7 @@ function ContactMap() {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Furqan%20Street%2C%20Bata%20Gate%20No.3%2C%20Batapur%20Lahore&z=17&output=embed"
+          src="https://www.google.com/maps?q=Raza%20Shoes%20Street%2C%20Bata%20Gate%203%2C%20Opp%20HBL%20Bank%2C%20Bata%20Pur%2C%20Lahore%2053480&z=17&output=embed"
         />
       </div>
     </motion.div>

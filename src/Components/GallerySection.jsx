@@ -43,7 +43,7 @@ export default function GallerySection() {
 
       <div className="-right-32 -bottom-32 absolute bg-golden/20 blur-[120px] rounded-full w-96 h-96"></div>
 
-      <div className="top-1/2 left-1/2 absolute bg-primary/10 blur-[100px] rounded-full w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="top-1/2 left-1/2 absolute bg-primary/10 blur-[100px] rounded-full w-125 h-125 -translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="relative mx-auto px-4 container">
         {/* Heading */}
