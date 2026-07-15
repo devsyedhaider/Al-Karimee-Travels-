@@ -60,7 +60,7 @@ function HajjPackages() {
               <div className="p-4 sm:p-5 md:p-6">
                 <a
                   href={item.pdf}
-                  download
+                  target="_blank"
                   className="flex justify-center items-center gap-2 bg-main hover:bg-primary px-4 py-3 rounded-xl w-full font-semibold text-white transition-colors"
                 >
                   <Download size={20} />
