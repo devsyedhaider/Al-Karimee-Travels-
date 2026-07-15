@@ -17,6 +17,10 @@ import UmrahImg from "../assets/home/umrah.webp";
 import hajj from "../assets/hajj/hajj-maktab-c.webp";
 import hajjMaktab from "../assets/hajj/Hajj-Maktab-C.pdf";
 
+import Umrah1 from "../assets/umrah/Umrah1.webp";
+import Umrah2 from "../assets/umrah/Umrah2.webp";
+import Umrah3 from "../assets/umrah/Umrah3.webp";
+
 export const FooterLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -168,5 +172,22 @@ export const Hajjpackages = [
     title: "MAKTAB CATEGORY C",
     image: hajj,
     pdf: hajjMaktab,
+  },
+];
+
+// Umrah Group
+
+export const UmrahGroups = [
+  {
+    title: "Ramadan Umrah",
+    image: Umrah1,
+  },
+  {
+    title: "Shahadat Bibi Fatima (SA)",
+    image: Umrah2,
+  },
+  {
+    title: "Arbaeen 2025",
+    image: Umrah3,
   },
 ];
