@@ -21,6 +21,9 @@ import Umrah1 from "../assets/umrah/Umrah1.webp";
 import Umrah2 from "../assets/umrah/Umrah2.webp";
 import Umrah3 from "../assets/umrah/Umrah3.webp";
 
+import Zairat1 from "../assets/zairait/Zairait1.webp";
+import Zairat2 from "../assets/zairait/Zariat2.webp";
+
 export const FooterLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
@@ -189,5 +192,16 @@ export const UmrahGroups = [
   {
     title: "Arbaeen 2025",
     image: Umrah3,
+  },
+];
+
+// Zairat Group
+
+export const ZairatGroups = [
+  {
+    image: Zairat1,
+  },
+  {
+    image: Zairat2,
   },
 ];
