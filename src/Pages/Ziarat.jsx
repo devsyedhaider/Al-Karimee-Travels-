@@ -1,5 +1,5 @@
 import PagesHeader from "../Components/PagesHeader";
-import ZairatBg from "../assets/HeaderAllPages/zairat.jpg";
+import ZairatBg from "../assets/HeaderAllPages/zairat.webp";
 
 export default function Ziarat() {
   return (

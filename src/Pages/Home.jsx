@@ -1,5 +1,5 @@
-import hajjImg from "../assets/home/hajj.avif";
-import UmrahImg from "../assets/home/umrah.avif";
+import hajjImg from "../assets/home/hajj.webp";
+import UmrahImg from "../assets/home/umrah.webp";
 import { Link } from "react-router-dom";
 import Testimonails from "../Components/Testimonails";
 import ServicesSection from "../Components/ServicesSection";

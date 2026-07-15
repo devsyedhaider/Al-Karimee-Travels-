@@ -2,29 +2,29 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import PagesHeader from "../Components/PagesHeader";
-import GalleryBg from "../assets/HeaderAllPages/gallery.jpg";
+import GalleryBg from "../assets/HeaderAllPages/gallery.webp";
 import Testimonails from "../Components/Testimonails";
 
 import { fadeUp, staggerContainer } from "../animations";
 
-import img1 from "../assets/gallery/1.jpg";
-import img2 from "../assets/gallery/2.jpg";
-import img3 from "../assets/gallery/3.jpg";
-import img4 from "../assets/gallery/4.jpg";
-import img5 from "../assets/gallery/5.jpg";
-import img6 from "../assets/gallery/6.jpg";
-import img7 from "../assets/gallery/7.jpg";
-import img8 from "../assets/gallery/8.jpg";
-import img9 from "../assets/gallery/9.jpg";
-import img10 from "../assets/gallery/10.jpg";
-import img11 from "../assets/gallery/11.jpg";
-import img13 from "../assets/gallery/13.jpg";
-import img14 from "../assets/gallery/14.jpg";
-import img15 from "../assets/gallery/15.jpg";
-import img16 from "../assets/gallery/16.jpg";
-import img17 from "../assets/gallery/17.jpg";
-import img18 from "../assets/gallery/18.jpg";
-import img19 from "../assets/gallery/19.jpeg";
+import img1 from "../assets/gallery/1.webp";
+import img2 from "../assets/gallery/2.webp";
+import img3 from "../assets/gallery/3.webp";
+import img4 from "../assets/gallery/4.webp";
+import img5 from "../assets/gallery/5.webp";
+import img6 from "../assets/gallery/6.webp";
+import img7 from "../assets/gallery/7.webp";
+import img8 from "../assets/gallery/8.webp";
+import img9 from "../assets/gallery/9.webp";
+import img10 from "../assets/gallery/10.webp";
+import img11 from "../assets/gallery/11.webp";
+import img13 from "../assets/gallery/13.webp";
+import img14 from "../assets/gallery/14.webp";
+import img15 from "../assets/gallery/15.webp";
+import img16 from "../assets/gallery/16.webp";
+import img17 from "../assets/gallery/17.webp";
+import img18 from "../assets/gallery/18.webp";
+import img19 from "../assets/gallery/19.webp";
 
 export default function Gallery() {
   return (

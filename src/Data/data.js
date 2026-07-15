@@ -9,10 +9,13 @@ import zainab from "../assets/testimonials/zainab-ali.webp";
 import ahmed from "../assets/testimonials/ahmed-bilal.webp";
 import maryam from "../assets/testimonials/maryam-sheikh.webp";
 
-import iraqImg from "../assets/home/iraqImg.jpg";
-import visaImg from "../assets/home/visaImg.jpg";
-import ziyaratImg from "../assets/home/ziyaratImg.jpg";
-import UmrahImg from "../assets/home/umrah.avif";
+import iraqImg from "../assets/home/iraqImg.webp";
+import visaImg from "../assets/home/visaImg.webp";
+import ziyaratImg from "../assets/home/ziyaratImg.webp";
+import UmrahImg from "../assets/home/umrah.webp";
+
+import hajj from "../assets/hajj/hajj-maktab-c.webp";
+import hajjMaktab from "../assets/hajj/Hajj-Maktab-C.pdf";
 
 export const FooterLinks = [
   { name: "Home", path: "/" },
@@ -150,5 +153,20 @@ export const StatsData = [
   {
     number: "24/7",
     title: "Customer Support",
+  },
+];
+
+// Hajj Data
+
+export const Hajjpackages = [
+  {
+    title: "MAKTAB CATEGORY A",
+    image: hajj,
+    pdf: hajjMaktab,
+  },
+  {
+    title: "MAKTAB CATEGORY C",
+    image: hajj,
+    pdf: hajjMaktab,
   },
 ];

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import img1 from "../assets/header/img4.jpg";
-import img2 from "../assets/header/img3.jpg";
-import img3 from "../assets/header/img2.jpg";
+import img1 from "../assets/header/img4.webp";
+import img2 from "../assets/header/img3.webp";
+import img3 from "../assets/header/img2.webp";
 
 export default function Header() {
   const slides = [

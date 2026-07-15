@@ -1,10 +1,10 @@
 import PagesHeader from "../Components/PagesHeader";
 import Testimonials from "../Components/Testimonails";
-import MoraBg from "../assets/HeaderAllPages/mora.jpg";
+import MoraBg from "../assets/HeaderAllPages/mora.webp";
 
-import img1 from "../assets/certificates/certificate1.jpg";
-import img2 from "../assets/certificates/certificate2.jpg";
-import img3 from "../assets/certificates/certificate3.jpg";
+import img1 from "../assets/certificates/certificate1.webp";
+import img2 from "../assets/certificates/certificate2.webp";
+import img3 from "../assets/certificates/certificate3.webp";
 import Awards from "../Components/Awards";
 
 export default function Mora() {

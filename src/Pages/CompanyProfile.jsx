@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import PagesHeader from "../Components/PagesHeader";
-import companyProfileBg from "../assets/HeaderAllPages/company.jpg";
+import companyProfileBg from "../assets/HeaderAllPages/company.webp";
 import { StatsData } from "../Data/data";
 import ServiceSection from "../Components/ServicesSection";
 import Testimonails from "../Components/Testimonails";
 import CEOIMG from "../assets/Ceo/CEOIMG.jpeg";
 
-import img1 from "../assets/certificates/certificate1.jpg";
-import img2 from "../assets/certificates/certificate2.jpg";
-import img3 from "../assets/certificates/certificate3.jpg";
+import img1 from "../assets/certificates/certificate1.webp";
+import img2 from "../assets/certificates/certificate2.webp";
+import img3 from "../assets/certificates/certificate3.webp";
 import Awards from "../Components/Awards";
 
 import { fadeUp, fadeLeft, fadeRight, staggerContainer } from "../animations";
