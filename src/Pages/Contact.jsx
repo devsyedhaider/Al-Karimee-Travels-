@@ -41,8 +41,8 @@ function ContactUs() {
               </h2>
 
               <p className="mt-5 max-w-xl font-light text-charcol text-md md:text-base">
-                Feel free to reach out for Hajj, Umrah and travel inquiries. We
-                are here 24/7 to assist you with quick response.
+                Raza shoes street, Bata Gate 3, oop, HBL Bank, Bata Pur, Lahore
+                53480
               </p>
             </div>
 
@@ -63,9 +63,7 @@ function ContactUs() {
                     Office Address
                   </h3>
 
-                  <p className="font-light text-charcol md:text-[15px] text-sm">
-                    Furqan street, Bata Gate No.3, opp. HBL Bank,
-                  </p>
+                  <p className="font-light text-charcol md:text-[15px] text-sm"></p>
                 </div>
               </motion.div>
 

@@ -54,18 +54,15 @@ export default function Testimonials() {
           </h2>
 
           <p className="mt-4 text-gray-600">
-            Real experiences from our happy customers.
+            Trusted by pilgrims across Pakistan for Hajj, Umrah and Ziyarat
+            services.
           </p>
         </motion.div>
 
         <div className="hidden sm:block">
           <motion.button
-            whileHover={{
-              scale: 1.1,
-            }}
-            whileTap={{
-              scale: 0.9,
-            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             onClick={prevSlide}
             className="top-1/2 left-3 md:left-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
           >
@@ -73,12 +70,8 @@ export default function Testimonials() {
           </motion.button>
 
           <motion.button
-            whileHover={{
-              scale: 1.1,
-            }}
-            whileTap={{
-              scale: 0.9,
-            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             onClick={nextSlide}
             className="top-1/2 right-3 md:right-10 z-10 absolute bg-white shadow p-3 rounded-full -translate-y-1/2"
           >
@@ -100,41 +93,25 @@ export default function Testimonials() {
               <motion.div
                 key={item.name + i}
                 variants={fadeUp}
-                initial={{
-                  opacity: 0,
-                  x: 40,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  x: -40,
-                }}
-                transition={{
-                  duration: 0.4,
-                }}
-                whileHover={{
-                  y: -8,
-                  scale: 1.02,
-                }}
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -40 }}
+                transition={{ duration: 0.4 }}
+                whileHover={{ y: -8, scale: 1.02 }}
                 className="bg-white shadow-lg hover:shadow-2xl p-6 border border-gray-100 rounded-2xl transition-shadow"
               >
                 <p className="mt-6 text-gray-600">{item.text}</p>
 
                 <div className="flex items-center gap-4 mt-6">
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                    }}
-                    src={item.image}
-                    alt={item.name}
-                    className="border-2 border-amber-400 rounded-full w-12 h-12"
-                  />
+                  <motion.div
+                    whileHover={{ scale: 1.08 }}
+                    className="flex justify-center items-center bg-main rounded-full w-12 h-12 font-medium text-white text-lg uppercase select-none"
+                  >
+                    {item.name.charAt(0)}
+                  </motion.div>
 
                   <div>
-                    <h4 className="font-semibold">{item.name}</h4>
+                    <h4 className="font-semibold text-gray-900">{item.name}</h4>
 
                     <p className="text-gray-500 text-sm">{item.role}</p>
                   </div>
