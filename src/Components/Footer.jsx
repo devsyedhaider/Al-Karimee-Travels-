@@ -142,7 +142,13 @@ const Footer = () => {
             <ul className="space-y-4 text-white/75">
               {FooterLinks.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.path} className="hover:text-golden transition">
+                  <Link
+                    to={item.path}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
+                    className="hover:text-golden transition"
+                  >
                     {item.name}
                   </Link>
                 </li>
